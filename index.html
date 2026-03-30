@@ -1,0 +1,424 @@
+<!DOCTYPE html>
+<html lang="uz">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aylanma Soliq - 23 Dars</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;600;800&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --primary-green: #D2FF28;
+            --tech-green: #D2FF28;
+            --dark-bg: #1a1a1a;
+            --text-white: #ffffff;
+            --text-muted: rgba(255, 255, 255, 0.7);
+        }
+
+        body {
+            background-color: var(--dark-bg);
+            color: var(--text-white);
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+            background-image:
+                radial-gradient(circle at 10% 20%, rgba(210, 255, 40, 0.05) 0%, transparent 40%),
+                radial-gradient(circle at 90% 80%, rgba(210, 255, 40, 0.05) 0%, transparent 40%);
+        }
+
+        @media (min-width: 1024px) {
+            body {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                height: 100vh;
+                overflow: hidden;
+            }
+
+            .slides-container {
+                width: 960px;
+                height: 1080px;
+                max-height: 95vh;
+                aspect-ratio: 960 / 1080;
+                border: 2px solid rgba(210, 255, 40, 0.3);
+                border-radius: 20px;
+                box-shadow: 0 0 100px rgba(0, 0, 0, 0.8), 0 0 30px rgba(210, 255, 40, 0.1);
+                margin: auto;
+                position: relative;
+                overflow: hidden;
+            }
+        }
+
+        h1,
+        h2,
+        h3 {
+            color: var(--primary-green);
+            margin: 0;
+            padding: 0;
+        }
+
+        .highlight {
+            color: var(--primary-green);
+            font-weight: 800;
+        }
+
+        .glass-box {
+            background: rgba(255, 255, 255, 0.02);
+            backdrop-filter: blur(20px);
+            border: 1px solid rgba(255, 255, 255, 0.05);
+            border-top: 1px solid rgba(210, 255, 40, 0.2);
+            border-radius: 30px;
+            padding: 40px;
+            box-shadow: 0 30px 60px rgba(0, 0, 0, 0.4);
+            width: 100%;
+            max-width: 850px;
+            margin: 0 auto;
+        }
+
+        .section-header {
+            font-size: 3rem;
+            font-weight: 800;
+            text-align: center;
+            color: var(--primary-green);
+            margin-bottom: 20px;
+        }
+
+        .topic-subheader {
+            font-size: 2.2rem;
+            font-weight: 700;
+            text-align: center;
+            color: #ffffff;
+            margin-bottom: 20px;
+        }
+
+        .calc-step {
+            background: rgba(210, 255, 40, 0.05);
+            border-left: 5px solid var(--primary-green);
+            padding: 20px;
+            margin-bottom: 20px;
+            border-radius: 10px;
+            font-size: 1.3rem;
+            line-height: 1.6;
+        }
+
+        .pravotka-row {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 15px;
+            background: rgba(255, 255, 255, 0.03);
+            border-radius: 10px;
+            margin-bottom: 10px;
+            border: 1px solid rgba(210, 255, 40, 0.1);
+        }
+
+        .code-box {
+            font-family: 'Courier New', Courier, monospace;
+            color: var(--primary-green);
+            font-weight: bold;
+            font-size: 1.4rem;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="slides-container">
+        <!-- Slide 1: Intro -->
+        <div class="slide active" id="slide-1">
+            <div class="bg-shape bg-shape-1"></div>
+            <div class="section-header">3-BO'LIM TOVAR OLDI SOTDI OPERATSIYALARI</div>
+            <div class="section-header" style="font-size: 2rem; opacity: 0.8; margin-top: -10px;">23 Dars</div>
+            <h1 class="topic-subheader" style="font-size: 3.5rem;">Aylanma soliq</h1>
+            <div
+                style="height: 3px; width: 60px; background: var(--primary-green); margin: 25px auto; border-radius: 10px;">
+            </div>
+            <div class="bg-shape bg-shape-2"></div>
+        </div>
+
+        <!-- Slide 2: Aylanma soliq nima -->
+        <div class="slide" id="slide-2">
+            <h2>Aylanma soliq haqida tushuncha</h2>
+            <div class="glass-box" style="margin-top: 20px;">
+                <div class="calc-step">
+                    <strong class="highlight">Aylanma soliq</strong> - Soddalashtirilgan soliq tizimidagilar har oy
+                    daromadidan to'laydigan soliq turi.
+                </div>
+                <div class="calc-step">
+                    <strong class="highlight">Soliq kodeksining 461-moddasi</strong> — bu aylanma solig'ini to'lovchilar
+                    to'g'risidagi eng muhim modda hisoblanadi.
+                </div>
+                <div class="calc-step"
+                    style="text-align: center; border-left: none; background: rgba(210, 255, 40, 0.1); border: 1px solid rgba(210, 255, 40, 0.3);">
+                    <em>O'quvchilarga tushuntirganda, buni <strong class="highlight">"Kimlar bu soliqni to'lashga
+                            haqli?"</strong> degan savolga javob sifatida taqdim etish kerak.</em>
+                </div>
+            </div>
+        </div>
+
+        <!-- Slide 3: 461-modda: Soliq to'lovchilar -->
+        <div class="slide" id="slide-3">
+            <h2>1. Soliq to'lovchilar (Asosiy qoida)</h2>
+            <div class="glass-box" style="margin-top: 20px;">
+                <p style="text-align: center; font-size: 1.3rem; margin-bottom: 20px;">
+                    <strong class="highlight">461-modda</strong>ga ko'ra, bizneslar 2 turga ajratiladi. Va aylanma
+                    soliqqa daxldor bo'lganlari:
+                </p>
+                <div class="calc-step">
+                    <strong class="highlight">To'lash huquqiga ega:</strong><br>
+                    Yillik jami daromadi 1 milliard so'mdan oshmagan O'zbekiston yuridik shaxslari.
+                </div>
+                <div class="calc-step">
+                    <strong class="highlight">QQS to'lashga majbur (aylanma to'lamaydi):</strong><br>
+                    • Aksiz to'lanadigan tovarlarni ishlab chiqaruvchilar (alkogol, tamaki).<br>
+                    • Foydali qazilmalarni kavlab oluvchi korxonalar.<br>
+                    • Yagona yer solig'i to'lovchi qishloq xo'jaligi korxonalari.<br>
+                    • Davlat ulushi 50% dan yuqori bo'lgan yuridik shaxslar.<br>
+                    • Alkogol mahsulotlari bilan savdo qiluvchi korxonalar.
+                </div>
+            </div>
+        </div>
+
+        <!-- Slide 4: Soliq solish obyekti -->
+        <div class="slide" id="slide-4">
+            <h2>3. Soliq solish obyekti</h2>
+            <div class="glass-box" style="margin-top: 20px;">
+                <p style="text-align: center; font-size: 1.3rem; margin-bottom: 20px;">461-modda bo'yicha soliq nimadan
+                    olinadi?</p>
+                <div class="calc-step" style="text-align: center; font-size: 1.5rem;">
+                    <strong class="highlight">Jami daromad:</strong><br>
+                    Tovar sotishdan, xizmat ko'rsatishdan va boshqa operatsiyalardan kelib tushgan pullar yig'indisi.
+                </div>
+                <div class="calc-step" style="border-left: 5px solid #ff4444; background: rgba(255, 68, 68, 0.05);">
+                    <strong style="color: #ff4444;">ESLATMA:</strong><br>
+                    Bunda xarajatlar (sotib olingan tovar narxi, ijara, oylik) chegirib tashlanmaydi. Faqat umumiy
+                    tushumdan hisoblanadi.
+                </div>
+            </div>
+        </div>
+
+        <!-- Slide 5: Ixtiyoriylik va Majburiylik -->
+        <div class="slide" id="slide-5">
+            <h2>4. Ixtiyoriylik va Majburiylik</h2>
+            <div class="glass-box" style="margin-top: 20px;">
+                <div class="calc-step">
+                    <strong class="highlight">Ixtiyoriy:</strong><br>
+                    Agar daromad 1 mlrd so'mgacha bo'lsa, tadbirkor o'zi xohlasa aylanma solig'ida qoladi, xohlasa
+                    umumiy tizimga (QQS + Foyda) o'tishi mumkin.
+                </div>
+                <div class="calc-step">
+                    <strong class="highlight">Majburiy:</strong><br>
+                    Daromad 1 mlrd so'mdan oshgan kundan boshlab, tadbirkor bu modda (461-modda) doirasidan chiqib
+                    ketadi va QQS to'lashga majbur bo'ladi.
+                </div>
+                <div class="calc-step"
+                    style="background: rgba(210, 255, 40, 0.1); border-left: none; text-align: center; border: 1px dashed var(--primary-green);">
+                    <strong class="highlight">Amaliy misol:</strong><br>
+                    Vaziyat: Korxonaning choraklik savdo aylanmasi 200 000 000 so'm.<br>
+                    Hisob-kitob: 200,000,000 × 4% = 8,000,000 so'm<br>
+                    Natija: Korxona davlat budjetiga 8 mln so'm soliq to'laydi.
+                </div>
+            </div>
+        </div>
+
+        <!-- Slide 6: Realizatsiya daromadlari -->
+        <div class="slide" id="slide-6">
+            <h2>Realizatsiya qilishdan olingan daromadlar</h2>
+            <div class="glass-box" style="margin-top: 20px;">
+                <p style="text-align: center; font-size: 1.3rem; margin-bottom: 20px;">Bu biznesning asosiy faoliyatidan
+                    tushgan pullar.</p>
+                <div class="calc-step">
+                    <strong class="highlight">Tovarlarni sotish:</strong><br>
+                    Do'kondagi savdo tushumi.
+                </div>
+                <div class="calc-step">
+                    <strong class="highlight">Xizmat ko'rsatish:</strong><br>
+                    Masalan, buxgalteriya xizmati yoki yuk tashishdan tushgan pul.
+                </div>
+                <div class="calc-step">
+                    <strong class="highlight">Ishlarni bajarish:</strong><br>
+                    Qurilish yoki ta'mirlash ishlaridan olingan mablag'.
+                </div>
+            </div>
+        </div>
+
+        <!-- Slide 7: Boshqa daromadlar -->
+        <div class="slide" id="slide-7">
+            <h2>Boshqa daromadlar (SK 297-modda)</h2>
+            <div class="glass-box" style="margin-top: 20px;">
+                <p style="text-align: center; font-size: 1.3rem; margin-bottom: 20px;">Biznesning asosiy ishi bo'lmasa
+                    ham, tushadigan qo'shimcha pullar.</p>
+                <div class="calc-step">
+                    <strong class="highlight">Ijara daromadlari:</strong><br>
+                    Binoni yoki uskunani ijaraga berishdan tushgan pul.
+                </div>
+                <div class="calc-step">
+                    <strong class="highlight">Voz kechilgan qarzlar:</strong><br>
+                    Agar kimdir sizning qarzingizdan kechib yuborsa, bu siz uchun daromad hisoblanadi.
+                </div>
+                <div class="calc-step">
+                    <strong class="highlight">Penya va jarimalar:</strong><br>
+                    Shartnoma buzilgani uchun hamkorlaringizdan undirilgan jarimalar.
+                </div>
+                <div class="calc-step">
+                    <strong class="highlight">Invertarizatsiya profitsitlari:</strong><br>
+                    Omboringizda hisobda yo'q, lekin amalda bor bo'lgan tovarlar (ortiqcha tovarlar) qiymati.
+                </div>
+            </div>
+        </div>
+
+        <!-- Slide 8: Soliq olinmaydigan daromadlar -->
+        <div class="slide" id="slide-8">
+            <h2>Soliq olinmaydigan daromadlar</h2>
+            <div class="glass-box" style="margin-top: 20px;">
+                <p style="text-align: center; font-size: 1.3rem; margin-bottom: 20px;">
+                    <em>"Davlat soliq so'ramaydigan pullar"</em> (SK 464-modda)
+                </p>
+                <div class="calc-step">
+                    <strong class="highlight">Ustav fondiga qo'shilgan hissalar:</strong><br>
+                    Ta'sischi biznesni boshlash uchun tikkan puli.
+                </div>
+                <div class="calc-step">
+                    <strong class="highlight">Olingan qarz va kreditlar:</strong><br>
+                    Bankdan olingan kredit daromad emas, u majburiyat.
+                </div>
+                <div class="calc-step">
+                    <strong class="highlight">Soliq imtiyozlari:</strong><br>
+                    Qonun bilan soliqdan ozod qilingan maxsus daromad turlari.
+                </div>
+                <div class="calc-step"
+                    style="text-align: center; font-size: 1.5rem; background: rgba(210, 255, 40, 0.1); border: 1px dashed var(--primary-green); border-left: none;">
+                    <strong class="highlight">Jami daromad</strong> = Realizatsiya + Boshqa daromadlar
+                </div>
+            </div>
+        </div>
+
+        <!-- Slide 9: Pravotka va Hisobot -->
+        <div class="slide" id="slide-9">
+            <h2>Aylanma soliq provodkasi va hisoboti</h2>
+            <div class="glass-box" style="margin-top: 20px;">
+                <h3 style="margin-bottom: 15px;">Buxgalteriya provodkasi:</h3>
+                <div class="pravotka-row">
+                    <div>
+                        <span class="code-box">Debit 9430</span>
+                        <div style="font-size: 1.1rem; margin-top: 5px;">Boshqa operatsion xarajatlar <br>(Soliq korxona
+                            uchun xarajat)</div>
+                    </div>
+                    <div style="font-size: 2rem; color: var(--primary-green);">→</div>
+                    <div style="text-align: right;">
+                        <span class="code-box">Kredit 6410</span>
+                        <div style="font-size: 1.1rem; margin-top: 5px;">Budjetga to'lovlar bo'yicha qarz <br>(Aylanma
+                            solig'i subschyoti)</div>
+                    </div>
+                </div>
+
+                <h3 style="margin-top: 30px; margin-bottom: 15px;">Hisobot topshirish:</h3>
+                <div class="calc-step" style="text-align: center; font-size: 1.4rem;">
+                    Aylanma soliq hisoboti <strong class="highlight">keyingi oyning 15-sanasigacha</strong>
+                    <br><span
+                        style="color: #fff; background: #333; padding: 5px 10px; border-radius: 5px; display: inline-block; margin-top: 10px;">My.soliq.uz</span>
+                    dan hisobot berilishi kerak.
+                </div>
+            </div>
+        </div>
+
+        <!-- Slide 10: YTT nima -->
+        <div class="slide" id="slide-10">
+            <h2>YTT nima? (Sodda ta'rif)</h2>
+            <div class="glass-box" style="margin-top: 20px;">
+                <div class="calc-step" style="font-size: 1.4rem; text-align: center;">
+                    <strong class="highlight">Yakka tartibdagi tadbirkor (YTT)</strong> — bu o'z nomi bilan, yuridik
+                    shaxs tashkil etmasdan, mustaqil ravishda tadbirkorlik faoliyatini yurituvchi jismoniy shaxsdir.
+                </div>
+                <div class="calc-step">
+                    <strong class="highlight">Yuridik shaxs emas:</strong><br>
+                    Uning ustav fondi yoki ta'sis hujjatlari bo'lmaydi.
+                </div>
+                <div class="calc-step">
+                    <strong class="highlight">Xodim yollash:</strong><br>
+                    YTT o'z faoliyatiga <span class="highlight">5 nafargacha</span> xodim yollashi mumkin (faoliyat
+                    turiga qarab cheklovlar bo'lishi mumkin).
+                </div>
+            </div>
+        </div>
+
+        <!-- Slide 11: YTT va yangi tartib -->
+        <div class="slide" id="slide-11">
+            <h2>YTT: 2026-yildagi inqilobiy o'zgarishlar</h2>
+            <div class="glass-box" style="margin-top: 20px;">
+                <div class="calc-step">
+                    <strong class="highlight">Yangi tartib (2026-yil 1-yanvardan):</strong><br>
+                    Soliq tizimida YTTlar uchun inqilobiy o'zgarish sodir bo'ldi. Endilikda <span class="highlight">1%
+                        aylanma solig'i stavkasi</span> nafaqat ma'lum bir toifalar, balki deyarli barcha kichik
+                    tadbirkorlar uchun amal qilmoqda.
+                </div>
+                <div class="calc-step">
+                    <strong class="highlight">1% stavka kimlar uchun amalda?</strong><br>
+                    Barcha Yakka tartibdagi tadbirkorlar (YTT) uchun!
+                </div>
+                <div class="calc-step">
+                    <strong class="highlight">Oldingi tartib:</strong><br>
+                    Ilgari daromadi 100 mln so'mgacha bo'lgan YTTlar faoliyat turiga qarab har oy qat'iy summada soliq
+                    to'lashardi.
+                </div>
+                <div class="calc-step"
+                    style="background: rgba(210, 255, 40, 0.1); border: 1px dashed var(--primary-green); border-left: none; text-align: center;">
+                    <strong class="highlight">Asosiy xulosa:</strong> 2026-yildan boshlab YTTlar uchun qat'iy
+                    belgilangan to'lov bekor qilindi.
+                </div>
+            </div>
+        </div>
+
+        <!-- Slide 12: Darsdan olingan natijalar -->
+        <div class="slide" id="slide-12">
+            <h2>📊 Darsdan olingan natijalar</h2>
+            <div class="glass-box" style="margin-top: 20px;">
+                <div class="calc-step">
+                    <strong class="highlight">1. Aylanma soliq asosi:</strong><br>
+                    Bu soliq yillik aylanmasi 1 mlrd so'mgacha bo'lganlar (yuridik shaxslar va YTTlar) uchun
+                    mo'ljallangan bo'lib, xarajatlar tushumdan chegirib tashlanmaydi.
+                </div>
+                <div class="calc-step">
+                    <strong class="highlight">2. Majburiy o'tish:</strong><br>
+                    Agar tushum miqdori 1 mlrd so'mdan oshib ketsa, tadbirkor darhol majburiy tartibda umumiy soliq
+                    tizimiga (QQS) o'tkaziladi.
+                </div>
+                <div class="calc-step">
+                    <strong class="highlight">3. Daromad va hisobot:</strong><br>
+                    Soliq bazasiga realizatsiyadan tashqari ijara, jarima kabi boshqa daromadlar ham kiradi. Hisobot
+                    keyingi oyning 15-sanasigacha topshirilishi shart.
+                </div>
+                <div class="calc-step">
+                    <strong class="highlight">4. YTT inqilobi (2026 yil):</strong><br>
+                    YTTlar uchun eskicha qat'iy summali to'lov yagona 1% stavkaga tushirildi, bu ularga faoliyatni
+                    soddalashtirilgan tartibda davom ettirish imkonini beradi.
+                </div>
+            </div>
+        </div>
+
+        <!-- Slide 13: Yakun -->
+        <div class="slide" id="slide-13">
+            <div class="bg-shape bg-shape-1" style="animation: pulse 3s infinite;"></div>
+            <div class="bg-shape bg-shape-2" style="animation: pulse 3s infinite reverse;"></div>
+            <h1 style="text-align: center; line-height: 1.2;">
+                O'SISHDAN<br>
+                <span
+                    style="color: var(--primary-green); -webkit-text-fill-color: var(--primary-green);">TO'XTAMANG!</span>
+                🚀
+            </h1>
+            <p style="font-size: 1.2rem; color: var(--primary-green); margin-top: 20px; opacity: 0.6;">DARS TUGADI</p>
+            <canvas id="fireworks"
+                style="position: absolute; top:0; left:0; width:100%; height:100%; z-index:-1; pointer-events:none;"></canvas>
+        </div>
+
+    </div>
+
+    <!-- Controls -->
+    <div class="progress-bar" id="progressBar"></div>
+    <div class="controls">
+        <div class="control-btn" onclick="prevSlide()">❮</div>
+        <div class="control-btn" onclick="nextSlide()">❯</div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
